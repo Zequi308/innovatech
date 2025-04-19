@@ -24,3 +24,14 @@ p {line-height: 1.5;}
 li {line-height: 1.5;}
 
 ul {line-height: 1.5;}
+
+body {
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(20px); /* Inicialmente un poco abajo */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+body.loaded {
+    opacity: 1; /* Totalmente visible */
+    transform: translateY(0); /* En su posición normal */
+}
